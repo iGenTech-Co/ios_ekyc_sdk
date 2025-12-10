@@ -1,3 +1,4 @@
+
 # How to Run and Test the EkycSdk
 
 Since `EkycSdk` is a **library** (SDK), you cannot "run" it directly. You must run it inside a **Host App**.
@@ -17,13 +18,13 @@ Here is the fastest way to test it:
 3. In your Project Settings (he root node in the sidebar), go to **General** > **Frameworks, Libraries, and Embedded Content**.
 4. Click **+** and select `EkycSdk` > `EkycSdk` library.
 
-## Step 3: Call the SDK
-1. Open `ViewController.swift` in your new App.
-2. Replace the contents with this code:
+## Step 3: Integration Code
+
+### Option A: UIKit (Storyboard/ViewController)
+Open `ViewController.swift` and replace contents:
 
 ```swift
 import UIKit
-// 1. Import the SDK
 import EkycSdk
 
 class ViewController: UIViewController, EkycDelegate {
@@ -31,7 +32,6 @@ class ViewController: UIViewController, EkycDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Add a button to start
         let button = UIButton(type: .system)
         button.setTitle("Start EKYC", for: .normal)
         button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
@@ -41,30 +41,58 @@ class ViewController: UIViewController, EkycDelegate {
     }
 
     @objc func startSdk() {
-        // 2. Configure and Start
-        let config = EkycConfig(userId: "test_user_1", themeColor: .red) // Testing with Red theme
-        
+        let config = EkycConfig(userId: "test_user_1", themeColor: .red)
         EkycManager.shared.delegate = self
         EkycManager.shared.startEkyc(config: config, from: self)
     }
 
-    // 3. Handle Callbacks
-    func ekycDidFinish() {
-        print("Test: Finished!")
-    }
-    
-    func ekycDidFail(error: Error) {
-        print("Test: Failed with error: \(error)")
-    }
-    
-    func ekycDidCancel() {
-        print("Test: User Cancelled")
-    }
+    func ekycDidFinish() {}
+    func ekycDidFail(error: Error) {}
+    func ekycDidCancel() {}
 }
 ```
 
-## Step 4: Run
-1. Select a Simulator (e.g., iPhone 15).
-2. Press **Run (Cmd+R)**.
-3. Tap the "Start EKYC" button.
-4. You should see the WebView load **YouTube** (as we configured it for testing).
+### Option B: SwiftUI
+Open `ContentView.swift` and replace contents:
+
+```swift
+import SwiftUI
+import EkycSdk
+
+// 1. Create a partial helper functionality
+class EkycViewModel: NSObject, ObservableObject, EkycDelegate {
+    func startEkyc() {
+        // Helper to find the top ViewController
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootVC = scene.windows.first?.rootViewController else { return }
+        
+        let config = EkycConfig(userId: "swiftui_user", themeColor: .purple)
+        EkycManager.shared.delegate = self
+        EkycManager.shared.startEkyc(config: config, from: rootVC)
+    }
+    
+    func ekycDidFinish() { print("Done") }
+    func ekycDidFail(error: Error) { print("Fail: \(error)") }
+    func ekycDidCancel() { print("Cancel") }
+}
+
+struct ContentView: View {
+    @StateObject private var viewModel = EkycViewModel()
+    
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("EKYC SDK")
+            
+            Button("Start Verification") {
+                viewModel.startEkyc()
+            }
+            .buttonStyle(.borderedProminent)
+            .padding()
+        }
+        .padding()
+    }
+}
+```
