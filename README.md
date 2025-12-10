@@ -10,7 +10,7 @@ This SDK provides a simple way to integrade a WebView-based EKYC flow into your 
 2.  **Tag** a release (e.g., `git tag 1.0.0`, `git push --tags`) so SPM can manage versions.
 3.  In your App (Xcode):
     - Go to **File > Add Packages...**
-    - Enter your **GitHub Repository URL** (e.g., `https://github.com/username/EkycSdk.git`).
+    - Enter your **GitHub Repository URL*.
     - Choose the version rule (e.g., "Up to Next Major" -> `1.0.0`).
 4.  Select the `EkycSdk` product.
 
