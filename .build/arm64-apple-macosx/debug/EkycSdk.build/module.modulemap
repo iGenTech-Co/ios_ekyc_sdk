@@ -1,0 +1,4 @@
+module EkycSdk {
+    header "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycSdk-Swift.h"
+    requires objc
+}

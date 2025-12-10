@@ -1,0 +1,250 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.EkycSdk-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/sources",
+      "importPath" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/UI/EkycWebViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "EkycSdk",
+      "moduleOutputPath" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/Modules/EkycSdk.swiftmodule",
+      "objects" : [
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycConfig.swift.o",
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycDelegate.swift.o",
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycManager.swift.o",
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycWebViewController.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycSdk-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycWebViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/Modules/EkycSdk.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycConfig.swift",
+        "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycDelegate.swift",
+        "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycManager.swift",
+        "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/UI/EkycWebViewController.swift"
+      ],
+      "tempsPath" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "EkycSdk" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "EkycSdk",
+      "-incremental",
+      "-c",
+      "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycConfig.swift",
+      "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycDelegate.swift",
+      "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycManager.swift",
+      "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/UI/EkycWebViewController.swift",
+      "-I",
+      "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycSdk-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "EkycSdk" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "writeCommands" : {
+    "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/UI/EkycWebViewController.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/sources"
+    },
+    "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

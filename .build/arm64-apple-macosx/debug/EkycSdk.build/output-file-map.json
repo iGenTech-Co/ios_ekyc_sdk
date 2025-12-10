@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/master.swiftdeps"
+  },
+  "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycConfig.swift": {
+    "dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycConfig.d",
+    "object": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycConfig.swift.o",
+    "swiftmodule": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycConfig~partial.swiftmodule",
+    "swift-dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycConfig.swiftdeps"
+  },
+  "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycDelegate.swift": {
+    "dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycDelegate.d",
+    "object": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycDelegate.swift.o",
+    "swiftmodule": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycDelegate.swiftdeps"
+  },
+  "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/Core/EkycManager.swift": {
+    "dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycManager.d",
+    "object": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycManager.swift.o",
+    "swiftmodule": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycManager.swiftdeps"
+  },
+  "/Users/zeyad/Downloads/EkycSdk/Sources/EkycSdk/UI/EkycWebViewController.swift": {
+    "dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycWebViewController.d",
+    "object": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycWebViewController.swift.o",
+    "swiftmodule": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycWebViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/zeyad/Downloads/EkycSdk/.build/arm64-apple-macosx/debug/EkycSdk.build/EkycWebViewController.swiftdeps"
+  }
+}
