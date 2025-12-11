@@ -4,7 +4,7 @@ public class EkycManager {
     
     public static let shared = EkycManager()
     
-    private let baseURL = "https://verify.bantech.ae/?vid=%2Fapi%2F9f998bfb185f4556bed6889ebda98cd4%2Fajil-pay%2Fa091353e5d1e4351a93aeb35e9e4e020%2Fweb%3Fexpires%3D1765458842%26signature%3Dcefd23333658ad0917d84919811d45cafb25752fb3ad886090b3812737025883"
+    private let baseURL = "https://verify.bantech.ae/?vid=%2Fapi%2Fa0913c4e10504651bbdaa826d8d84f71%2Ftest%2Fa0913e3ba979456888c982061dae9c82%2Fweb%3Fexpires%3D1765460348%26signature%3De261efa8478b83692e8f2baf0d3f6540a93f8c18936a08623606891e0ea0474c"
  
     private init() {}
     
