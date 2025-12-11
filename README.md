@@ -62,6 +62,23 @@ In your client application's View Controller:
     }
     ```
 
+## Camera & Microphone Permissions
+
+The SDK requires camera and microphone access for eKYC verification. **You must add the following keys to your app's `Info.plist`:**
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>We need access to your camera for identity verification</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>We need access to your microphone for identity verification</string>
+```
+
+**Important Notes:**
+- The SDK automatically handles WebView permission requests
+- Your app must include these Info.plist keys or the camera/microphone will not work
+- Customize the description strings to match your app's use case
+- iOS will show these messages when requesting permission from the user
+
 ## Requirements
 
 - iOS 13.0+
