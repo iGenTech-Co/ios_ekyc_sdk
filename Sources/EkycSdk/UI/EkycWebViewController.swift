@@ -34,9 +34,18 @@ class EkycWebViewController: UIViewController, WKNavigationDelegate {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
+        
+        // Remove all automatic insets / padding
+        if #available(iOS 11.0, *) {
+            webView.scrollView.contentInsetAdjustmentBehavior = .never
+        }
+        webView.scrollView.contentInset = .zero
+        webView.scrollView.scrollIndicatorInsets = .zero
+        
         webView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(webView)
         
+        // Pin to full view (not just safe area)
         NSLayoutConstraint.activate([
             webView.topAnchor.constraint(equalTo: view.topAnchor),
             webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
@@ -65,7 +74,11 @@ class EkycWebViewController: UIViewController, WKNavigationDelegate {
             view.backgroundColor = .white
         }
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .cancel,
+            target: self,
+            action: #selector(closeTapped)
+        )
         navigationItem.leftBarButtonItem?.tintColor = themeColor
     }
     
